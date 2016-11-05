@@ -487,6 +487,10 @@ public class DistMemList implements Runnable
 		return stringBuffer.toString();
 	}
 
+	/*
+	Machine names are hashed. 
+	*/
+	
 	public List<String> hashedRingMaker()
 	{
 		List<String> ring = new ArrayList<String>();
@@ -517,6 +521,9 @@ public class DistMemList implements Runnable
 		return hashedRing;
 	}
 
+	/*
+	Puts the machine names in a list and sorts it.
+	*/
 	public List<String> RingMaker ()
 	{
 		List<String> ring = new ArrayList<String>();
@@ -537,6 +544,10 @@ public class DistMemList implements Runnable
 		Collections.sort(ring);		
 		return ring;
 	}
+	
+	/*
+	Gets the member list in a string for gossipping.
+	*/
 
 	public String get_list(String currtimestring)
 	{
