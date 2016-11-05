@@ -1,3 +1,10 @@
+/*
+Five threads were used, two for gossip sending and receiving and two for 
+election sending and receiving. The last one for file operations. 
+
+UDP was used for gossipping and TCP for election and file operations.
+*/
+
 import java.io.*;
 import java.net.*;
 import java.security.MessageDigest;
