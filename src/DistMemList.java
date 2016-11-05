@@ -3,6 +3,16 @@ Five threads were used, two for gossip sending and receiving and two for
 election sending and receiving. The last one for file operations. 
 
 UDP was used for gossipping and TCP for election and file operations.
+
+TCP: High reliability and transmission time is less critical.
+Data packets are in teh order specified. Data is read as a byte stream
+there are no distinguishing message boundaries. Error checking and error 
+recovery. There is Handshake. 
+
+UDP: Fast, efficient transmission as in games. Also for servers that 
+answer small queries from large # of clients. No ordering. Messages are 
+sent individually. Error checking but no error recovery. COnnectionless 
+protocol, no handshake. 
 */
 
 import java.io.*;
